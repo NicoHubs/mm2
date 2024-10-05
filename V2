@@ -3,7 +3,7 @@ Library.Theme = "Dark"
 local Flags = Library.Flags
 
 local Window = Library:Window({
-   Text = "Trade Freeze V2 By Nico"
+   Text = "N1C0 HUB V2 By Nico"
 })
 
 -- First Tab
