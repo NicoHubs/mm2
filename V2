@@ -8,7 +8,7 @@ local Window = Library:Window({
 
 -- First Tab
 local Tab1 = Window:Tab({
-   Text = "Main"
+   Text = "MM2"
 })
 
 local Section1 = Tab1:Section({
@@ -18,47 +18,76 @@ local Section1 = Tab1:Section({
 -- Buttons in the first section
 Section1:Button({
    Text = "Trade Freeze",
-   Callback = function()loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
-       warn("Trade Freeze")
+   Callback = function()
+      loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
+      warn("Trade Freeze")
    end
 })
 
 Section1:Button({
    Text = "Dupe V2",
-   Callback = function()loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
-       warn("Dupe V2")
+   Callback = function()
+      loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
+      warn("Dupe V2")
    end
 })
 
 Section1:Button({
-   Text = "CamLockM2",
-   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-da-hood-15810"))()
-       warn("CamLockM2")
+   Text = "CamLockM2 1V1 ONLY",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-da-hood-15810"))()
+      warn("CamLockM2")
    end
 })
 
 -- Second Tab
 local Tab2 = Window:Tab({
-   Text = "Advanced"
+   Text = "HUBS"
 })
 
 local Section2 = Tab2:Section({
    Text = "HUB UI"  -- Changed section name to HUB UI
 })
 
--- Renamed Option 1 to Yarhm Gui
+-- Existing Buttons
 Section2:Button({
    Text = "Yarhm Gui",
-   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403"))()
-       warn("Yarhm Gui Selected")
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403"))()
+      warn("Yarhm Gui Selected")
    end
 })
 
--- Renamed Option 2 to Ghost Hub Gui
 Section2:Button({
    Text = "Ghost Hub Gui",
-   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101"))()
-       warn("Ghost Hub Gui Selected")
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101"))()
+      warn("Ghost Hub Gui Selected")
+   end
+})
+
+-- New Buttons
+Section2:Button({
+   Text = "ChatBot Ai",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-TROLL-AI-CHATBOTHUB-SMART-19447"))()  -- Replace with actual URL
+      warn("Script 1 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Arsenal",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Op-script-silent-aim-19341"))()  -- Replace with actual URL
+      warn("Script 2 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Blox Fruit No Key",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-Redz-hub-19331"))()  -- Replace with actual URL
+      warn("Script 3 Loaded")
    end
 })
 
