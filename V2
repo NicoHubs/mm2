@@ -12,7 +12,7 @@ local Tab1 = Window:Tab({
 })
 
 local Section1 = Tab1:Section({
-   Text = "Menu"
+   Text = "Malicious"
 })
 
 -- Buttons in the first section
@@ -51,7 +51,7 @@ local Section2 = Tab2:Section({
 
 -- Existing Buttons
 Section2:Button({
-   Text = "Yarhm Gui",
+   Text = "Yarhm Mm2",
    Callback = function() 
       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403"))()
       warn("Yarhm Gui Selected")
@@ -59,7 +59,7 @@ Section2:Button({
 })
 
 Section2:Button({
-   Text = "Ghost Hub Gui",
+   Text = "Ghost Hub Universal",
    Callback = function() 
       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101"))()
       warn("Ghost Hub Gui Selected")
