@@ -46,7 +46,7 @@ local Tab2 = Window:Tab({
 })
 
 local Section2 = Tab2:Section({
-   Text = "HUB UI"  -- Changed section name to HUB UI
+   Text = "HUB UI"
 })
 
 -- Existing Buttons
@@ -68,26 +68,76 @@ Section2:Button({
 
 -- New Buttons
 Section2:Button({
-   Text = "ChatBot Ai",
+   Text = "ChatBot AI",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-TROLL-AI-CHATBOTHUB-SMART-19447"))()  -- Replace with actual URL
-      warn("Script 1 Loaded")
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-TROLL-AI-CHATBOTHUB-SMART-19447"))()
+      warn("ChatBot AI Loaded")
    end
 })
 
 Section2:Button({
-   Text = "Arsenal",
+   Text = "Arsenal Op Script",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Op-script-silent-aim-19341"))()  -- Replace with actual URL
-      warn("Script 2 Loaded")
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-Op-script-silent-aim-19341"))()
+      warn("Arsenal Op Script Loaded")
    end
 })
 
 Section2:Button({
    Text = "Blox Fruit No Key",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-Redz-hub-19331"))()  -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-Redz-hub-19331"))()
+      warn("Blox Fruit No Key Loaded")
+   end
+})
+
+-- Additional New Buttons
+Section2:Button({
+   Text = "Jailbreak Has Key",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()  -- Replace with actual URL
+      warn("Script 1 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Pro Hub No key",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()  -- Replace with actual URL
+      warn("Script 2 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Sky Hub Has Key",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sky-Hub-18700"))() -- Replace with actual URL
       warn("Script 3 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Strongest Battle ground",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-The-Strongest-Battlegrounds-Hub-19562"))()
+  -- Replace with actual URL
+      warn("Script 4 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Brookhaven Hub",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BrookHaven-Hub-19561"))()  -- Replace with actual URL
+      warn("Script 5 Loaded")
+   end
+})
+
+Section2:Button({
+   Text = "Dahood Zinc Hub No Key",
+   Callback = function() 
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Da-Hood-UPTED-Zinc-Hub-10720"))()  -- Replace with actual URL
+      warn("Script 6 Loaded")
    end
 })
 
