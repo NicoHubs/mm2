@@ -32,13 +32,21 @@ Section1:Button({
    end
 })
 
-Section1:Button({
-   Text = "CamLockM2 1V1 ONLY",
-   Callback = function()
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-da-hood-15810"))()
-      warn("CamLockM2")
-   end
+-- Local Section
+local LocalSection = Tab1:Section({
+   Text = "Local"
 })
+
+-- Adding 8 buttons in the Local section
+for i = 1, 8 do
+    LocalSection:Button({
+        Text = "Local Feature " .. i,
+        Callback = function()
+            -- Add your local feature code here
+            warn("Local Feature " .. i .. " Executed")
+        end
+    })
+end
 
 -- Second Tab
 local Tab2 = Window:Tab({
@@ -49,7 +57,7 @@ local Section2 = Tab2:Section({
    Text = "HUB UI"
 })
 
--- Existing Buttons
+-- Existing Buttons in Section2
 Section2:Button({
    Text = "Yarhm Mm2",
    Callback = function() 
@@ -66,11 +74,11 @@ Section2:Button({
    end
 })
 
--- New Buttons
+-- New Buttons in Section2
 Section2:Button({
    Text = "ChatBot AI",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-TROLL-AI-CHATBOTHUB-SMART-19447"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Guerric9018/chatbothub/main/ChatbotHub.lua"))()
       warn("ChatBot AI Loaded")
    end
 })
@@ -95,7 +103,7 @@ Section2:Button({
 Section2:Button({
    Text = "Jailbreak Has Key",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()  -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()
       warn("Script 1 Loaded")
    end
 })
@@ -103,7 +111,7 @@ Section2:Button({
 Section2:Button({
    Text = "Pro Hub No key",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()  -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726"))()
       warn("Script 2 Loaded")
    end
 })
@@ -111,7 +119,7 @@ Section2:Button({
 Section2:Button({
    Text = "Sky Hub Has Key",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sky-Hub-18700"))() -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Sky-Hub-18700"))()
       warn("Script 3 Loaded")
    end
 })
@@ -120,7 +128,6 @@ Section2:Button({
    Text = "Strongest Battle ground",
    Callback = function() 
       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-The-Strongest-Battlegrounds-Hub-19562"))()
-  -- Replace with actual URL
       warn("Script 4 Loaded")
    end
 })
@@ -128,7 +135,7 @@ Section2:Button({
 Section2:Button({
    Text = "Brookhaven Hub",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BrookHaven-Hub-19561"))()  -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BrookHaven-Hub-19561"))()
       warn("Script 5 Loaded")
    end
 })
@@ -136,9 +143,44 @@ Section2:Button({
 Section2:Button({
    Text = "Dahood Zinc Hub No Key",
    Callback = function() 
-      loadstring(game:HttpGet("https://rawscripts.net/raw/Da-Hood-UPTED-Zinc-Hub-10720"))()  -- Replace with actual URL
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Da-Hood-UPTED-Zinc-Hub-10720"))()
       warn("Script 6 Loaded")
    end
 })
 
-Tab1:Select()  -- This will select the first tab by default
+-- New Adopt Me Tab
+local Tab3 = Window:Tab({
+   Text = "Adopt Me"
+})
+
+local LocalSectionAdoptMe = Tab3:Section({
+   Text = "Menu"
+})
+
+-- Adding 3 buttons in the Local section for Adopt Me
+LocalSectionAdoptMe:Button({
+   Text = "Ice Hub Adopt Me",
+   Callback = function()
+      -- loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ice-Hub-6414"))()
+      warn("Adopt Feature 1 Executed")
+   end
+})
+
+LocalSectionAdoptMe:Button({
+   Text = "Dupe Pets x",
+   Callback = function()
+      -- loadstring(game:HttpGet("https://egorikusa.space/adbe64e5cc48512a13d2bb2f.lua", true))()
+      warn("Adopt Feature 2 Executed")
+   end
+})
+
+LocalSectionAdoptMe:Button({
+   Text = "Trade Pets Freeze",
+   Callback = function()
+      -- loadstring(game:HttpGet("https://egorikusa.space/adbe64e5cc48512a13d2bb2f.lua", true))()
+      warn("Adopt Feature 3 Executed")
+   end
+})
+
+-- Select the first tab by default
+Tab1:Select()  
